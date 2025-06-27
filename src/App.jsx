@@ -1,6 +1,11 @@
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import { NavBar } from "./components";
-import { FlavorSection, HeroSection, MessageSection } from "./sections";
+import {
+  FlavorSection,
+  HeroSection,
+  MessageSection,
+  NutritionSection,
+} from "./sections";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -22,6 +27,7 @@ const App = () => {
           <HeroSection />
           <MessageSection />
           <FlavorSection />
+          <NutritionSection />
           <div>
             <h1 className="text-center text-4xl font-bold py-10">
               Scroll down to see the effects
