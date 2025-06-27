@@ -10,6 +10,7 @@ const BenefitSection = () => {
         trigger: ".benefit-section",
         start: "top 60%",
         end: "top top",
+        scrub: 1.5,
       },
     });
     revealTl

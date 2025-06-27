@@ -6,6 +6,7 @@ import {
   MessageSection,
   NutritionSection,
   BenefitSection,
+  TestimonailsSection,
 } from "./sections";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -30,6 +31,7 @@ const App = () => {
           <FlavorSection />
           <NutritionSection />
           <BenefitSection />
+          <TestimonailsSection />
           <div>
             <h1 className="text-center text-4xl font-bold py-10">
               Scroll down to see the effects
