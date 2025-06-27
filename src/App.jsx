@@ -1,18 +1,33 @@
-import { ScrollTrigger } from "gsap/all";
+import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import { NavBar } from "./components";
-import { HeroSection, MessageSection } from "./sections";
+import { FlavorSection, HeroSection, MessageSection } from "./sections";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const App = () => {
+  useGSAP(() => {
+    ScrollSmoother.create({
+      smooth: 3,
+      effects: true,
+    });
+  });
+
   return (
     <div>
       <NavBar />
-      <HeroSection />
-      <MessageSection />
-      <div className="h-[300vh] border border-green-500">
-        Extra Space for Scrolling
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <HeroSection />
+          <MessageSection />
+          <FlavorSection />
+          <div>
+            <h1 className="text-center text-4xl font-bold py-10">
+              Scroll down to see the effects
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
   );
