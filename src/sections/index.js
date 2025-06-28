@@ -4,6 +4,7 @@ import FlavorSection from "./FlavorSection";
 import NutritionSection from "./NutritionSection";
 import BenefitSection from "./BenefitSection";
 import TestimonailsSection from "./TestimonailsSection";
+import FooterSection from "./FooterSection";
 
 export {
   HeroSection,
@@ -12,4 +13,5 @@ export {
   NutritionSection,
   BenefitSection,
   TestimonailsSection,
+  FooterSection,
 };
